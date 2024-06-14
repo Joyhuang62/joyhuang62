@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊會員 | Cozy House</title>
+    <style>
+        /* 新增的 CSS */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('e1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        form {
+            width: 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.9); /* 讓表單背景透明 */
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>註冊會員</h1>
+    </header>
+
+    <main>
+        <form action="register.php" method="POST">
+            <label for="username">用戶名稱：</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="password">密碼：</label>
+            <input type="password" id="password" name="password" required>
+            <br>
+            <input type="submit" value="註冊">
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Cozy House. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
